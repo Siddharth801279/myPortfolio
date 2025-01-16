@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="desktop-Nav">
+        <div class="logo">Siddharth Bisht</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Siddharth Bisht</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+            <div class="menu-links">
+                    <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img class="profile__img" src="./assets/images/profile2_processed.JPG" alt="Siddahrth_bisht">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Siddharth Bisht</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/MY_RESUME.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./assets/#Contact'">Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/images/linked_logo.png" alt="My linkedIn profile" class="icon" onclick="location.href='https://linkedin.com/'">
+                <img src="./assets/images/github.png" alt="My linkedIn profile" class="icon" onclick="location.href='https://github.com/'">
+            </div>
+        </div>
+    </section>
+    <section id="About">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/images/my_profile_processed.jpg" alt="profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                  <div class="details-containers">
+                    <img src="./assets/images/experience_icon.png" alt="experience icon" class="icon">
+                    <h3>Experience</h3>
+                    <p>Frontend Developer Intern At<br>S&S Thinkhub</p>
+                  </div>
+                  <div class="details-containers">
+                    <img src="./assets/images/education_icon.png" alt="education icon" class="icon">
+                    <h3>Education</h3>
+                    <p>Bachelors Degree in<br>Computer Science & Engineering</p>
+                  </div>
+                </div>
+                <div class="text-container">
+                    <p>I am a passionate and dedicated web developer intern at S&S Thinkhub, 
+                        where I specialize in crafting intuitive and responsive frontend solutions.
+                        With a strong foundation in HTML, CSS, JavaScript, and modern frameworks, 
+                        I strive to create user-centric designs that bring ideas to life.                         
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/images/down-arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#Experience'">
+    </section>
+    <section id="Experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-deatails-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/images/check.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/images/check.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/images/check.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/images/check.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>ReactJS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/images/check.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Bootstrap</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/images/check.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Web Design</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/images/check.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>MySql</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/images/check.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/images/check.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/images/check.png" alt="checkmark" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/images/down-arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#Projects'">
+    </section>
+    <section id="Projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-containers color-container">
+                <div class="article-container">
+                    <img src="./assets/images/chatapp_img.png" alt="project-1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Chat Application</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-containers color-container">
+                <div class="article-container">
+                    <img src="./assets/images/fitness_img.png" alt="project-1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Fitness Website</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>
+            <div class="details-containers color-container">
+                <div class="article-container">
+                    <img src="./assets/images/Screenshot 2025-01-15 124422.png" alt="project-1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Weather App</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/images/down-arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#Projects'">
+    </section>
+    <section id="Contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/images/envelope.png" alt="email icon" class="icon email-icon">
+                <p><a href="mailto:siddharthbisht1504@gmail.com">siddharthbisht1504@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/images/linked_logo.png" alt="linked icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com">linkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Experience">Experience</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul> 
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Siddharth Bisht, All Rights Reserved</p>
+    </footer>
+   <script src="script.js"></script> 
+</body>
+</html>
